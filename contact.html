@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+            <!-- div vide img ajouté en css  -->
+    <div></div>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="aller sur la page accueil">Accueil</a></li>
+                <li><a href="contact.html" title="aller sur la page contact">Contact</a></li>
+                <li><a href="https://www.interface3namur.be" title="Aller sur le site" target="_blank">Interface3namur</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact</h1>
+        <section>
+            <h2>Horaire</h2>
+            <article>
+                <h3>Mes disponibilités :</h3>
+                <div class="scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Lundi</th>
+                                <th>Mardi</th>
+                                <th>Mercredi</th>
+                                <th>Jeudi</th>
+                                <th>Vendredi</th>
+                                <th>Samedi</th>
+                                <th>Dimanche</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Matin</th>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Non dispo</td>
+                            </tr>
+                            <tr>
+                                <th>Soir</th>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Non dispo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+            <h2>Formulaire de Contact :</h2>
+            <form action="#" method="GET">
+                <div class="space">
+                    <label for="email">Votre adresse email</label>
+                    <input type="email" id="email" name="mail" placeholder="votre@email.com" required>
+                </div>
+                <div class="space">
+                    <label for="rdv">Je désir prendre rendez-vous le :</label>
+                    <select name="rdv" id="rdv">
+                        <option value="">--Choisir une option--</option>
+                        <optgroup label="Lundi">
+                            <option value="lundiMatin">Matin</option>
+                            <option value="lundiSoir">Soir</option>
+                        </optgroup>
+                        <optgroup label="Mardi">
+                            <option value="mardiMatin">Matin</option>
+                            <option value="mardiSoir">Soir</option>
+                        </optgroup>
+                        <optgroup label="Mercredi">
+                            <option value="mercrediMatin">Matin</option>
+                            <option value="mercrediSoir">Soir</option>
+                        </optgroup>
+                        <optgroup label="Jeudi">
+                            <option value="jeudiMatin">Matin</option>
+                            <option value="jeudiSoir">Soir</option>
+                        </optgroup>
+                        <optgroup label="Vendredi">
+                            <option value="vendrediMatin">Matin</option>
+                            <option value="vendrediSoir">Soir</option>
+                        </optgroup>
+                        <optgroup label="Samedi">
+                            <option value="samediMatin">Matin</option>
+                            <option value="samediSoir">Soir</option>
+                        </optgroup>
+                        <optgroup label="Dimanche">
+                            <option value="dimancheMatin" disabled>Matin</option>
+                            <option value="dimancheSoir" disabled>Soir</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="space">
+                    <label for="textbox">Entrer votre message ici :</label>
+                </div>
+                <div class="space">
+                    <textarea name="textbox" id="textbox" cols="50" rows="10" placeholder="Votre texte ici..."></textarea>
+                </div>
+                <div class="space">
+                    <label for="newsletter">Je m'inscris à la newsletter</label>
+                    <input type="checkbox" id="newsletter" name="newsletter" checked>
+                </div class="space">
+                <label for="fileInput">Votre coupon de réduction (&#46;pdf uniquement) :</label>
+                <input type="file" id="fileInput" name="fileInput" accept=".pdf">
+                <div class="align">
+                    <input class="bouton" type="submit" id="send" value="Envoyer formulaire">
+                    <input class="bouton" type="reset" value="Reset">
+                </div>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <h3>Informations</h3>
+        <p>Site web pour <strong>la formation Web Developer Back-end Data</strong></p>
+        <p><strong>Tatiana AF</strong> &copy;2021</p>
+    </footer>
+    
+</body>
+</html>
