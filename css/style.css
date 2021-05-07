@@ -1,0 +1,255 @@
+/* mise en forme générale */
+/* sélecteur universel  */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color:#eee;
+    color: #222;
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.25;
+}
+
+/* mise en page de tous les images */
+img {
+    width: 100%;
+    height: auto;
+}
+/* centre le contenu textuel du UL (NAV) */
+header ul{
+    text-align: center;
+}
+
+/* mise en forme de l'entete */
+header {    
+    color: white;
+    /* background-color: rgba(163, 203, 77, 0.9); */
+    /* background-color: #7cc199; */
+    background: rgb(33,69,103);
+    background: linear-gradient(180deg, rgba(33, 69, 103, 0.9) 50%, rgba(170,215,189,1) 100%);
+    padding-bottom: 1px;
+}
+
+/* Banner */
+header div {
+    border: 1px solid #214567;
+    height: 25vh;
+    background-image: url("../img/banner-01.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: center;
+}
+
+/* alignement de la navigation les uns à coté des autres */
+header nav li{
+    margin: 12px;
+    list-style: none;
+    display: inline-block;
+}
+
+/* mise en forme des elements de navigations */
+header nav li a{
+    font-size: 1.4em;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 13px;
+    color: rgb(255, 255, 255);
+}
+
+/* mise en forme de la transition du hover */
+header nav li a:hover {
+    color: #aad7bd;
+    /* background-color: rgb(33, 69, 103, .7); */
+    /* background: rgb(33,69,103); */
+    background: linear-gradient(180deg, rgba(33,69,103,0.5472157320872274) 50%, rgba(170,215,189,1) 100%);
+    transition: 2s;
+}
+
+/* mise en forme de tous les paragraphes */
+p{
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+/* mise en forme du main */
+main{
+    padding: 24px 18px ;
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: rgb(235, 235, 235);
+}
+
+main h1{
+    color: #214567;
+    font-size: 2.6em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgba(0,0,0,.3) ;
+    padding-bottom: 24px;
+    border-bottom: 1px dashed #214567;
+    margin-bottom: 40px;
+}
+
+main h2{
+    font-size: 1.6em;
+    font-weight: 400;
+    letter-spacing: 3px ;
+    margin-bottom: 18px;
+    color: #fff;
+    background-color: #214567;
+    padding: 7px;
+}
+
+.majuscule{
+    text-transform: uppercase;
+}
+
+main h3{
+    font-size: 1.6em;
+    margin-bottom: 12px;                                                                  
+}
+
+.souligne{
+    text-decoration: underline;
+}
+
+main article{
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+}
+
+/* mise en forme des paragraphes dans le main */
+main p{
+    text-align: justify;
+}
+
+main figure{
+    margin-bottom: 12px;
+}
+
+main figcaption{
+    color: rgb(242,242,242);
+    background-color: #383b3f;
+    padding: 7px;
+    text-align: center;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+/* mise en place de la gallerie d'img ET du comportement responsive flex sur un écran mobile*/
+@media screen and (min-width:780px) {
+    .flexing{
+        display: flex;
+    }
+    #gallery{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #gallery figure{
+        width: 47.5%;
+    }
+}
+
+/* mise en place du footer */
+footer{
+    color: rgb(217,217,217,);
+    background-color:#214567;
+    padding:24px 18px;
+    text-align: center;
+}
+footer h3{
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 12px;
+    color: white;
+}
+
+footer p{
+    color: white;
+    font-weight: 100;
+}
+
+.souligne{
+    text-transform: uppercase;
+}
+
+
+
+
+
+/* mise en place de la page contact */
+/* tableau des disponibilités */
+table {
+    border-bottom: 2px solid rgba(170,215,189,1);
+    border-collapse: collapse;
+    box-shadow:0 5px 50px rgba(0,0,0,0.15);
+    margin: 100px auto;
+    text-align: center;
+
+}
+
+thead{
+    background: linear-gradient(180deg, rgba(33,69,103,0.5) 50%, rgba(170,215,189,1) 100%);
+}
+
+th, td{
+    padding: 15px;
+}
+
+/* scrollbar du tableau pour lui apporter un coté responsive */
+.scroll{
+    overflow: auto;
+    /* white-space: nowrap; */
+}
+
+/* mise en forme de l'espace entre les labels et inputs */
+.space{
+    margin-bottom: 10px;
+}
+
+/* mise en forme de la textarea */
+textarea{
+    width: 100%;
+}
+
+/* mise en forme des boutons */
+.bouton{
+    background-color: rgb(33,69,103); 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.bouton:hover{
+    background-color: rgb(84, 199, 132);
+    transition: 1s;
+}
+
+/* alignement des boutons */
+.align{
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* Pour mettre à la ligne le input -choisir un fichier- : ajouter une class dans le html 
+et dans le css lui attribuer un selecteur display: block;  */
+
+
+
+
+
+
+
+
+
